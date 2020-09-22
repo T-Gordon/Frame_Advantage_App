@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../Pages/FrameAdvantageSettingsPage.dart';
+import '../Pages/SettingsPages/SettingsPage.dart';
 class FrameAdvantageAppBar extends AppBar{
   FrameAdvantageAppBar({Key key, Widget title  ,BuildContext context,})
       : super(key: key , title: title , centerTitle: true , actions: <Widget>[new IconButton(icon: new Icon(Icons.settings)

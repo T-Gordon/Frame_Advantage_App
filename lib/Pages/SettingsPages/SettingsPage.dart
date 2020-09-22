@@ -3,10 +3,10 @@ class FrameAdvantageSettingsPage extends StatefulWidget {
   FrameAdvantageSettingsPage({Key key, this.title}) : super(key: key);
   final String title;
   @override
-  _FrameAdvantageSettingsPageState createState() => _FrameAdvantageSettingsPageState();
+  SettingsPageState createState() => SettingsPageState();
 }
 
-class _FrameAdvantageSettingsPageState extends State<FrameAdvantageSettingsPage> {
+class SettingsPageState extends State<FrameAdvantageSettingsPage> {
   final  List<String> settingsInfo =[
     "General Settings",
     "Network Settings",

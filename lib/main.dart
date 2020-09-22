@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frame_advantage_app/Pages/FrameAdvantageFrameDataPage.dart';
-import 'package:frame_advantage_app/Pages/FrameAdvantagePatchNotePage.dart';
-import 'Pages/FrameAdvantageHomePage.dart';
-import 'Pages/FrameAdvantageTournamentCalendarPage.dart';
+import 'package:frame_advantage_app/Pages/CurrentPage.dart';
+
 
 void main() {
   runApp(FrameAdvantageApp());
@@ -19,17 +17,15 @@ class FrameAdvantageApp extends StatelessWidget {
         primarySwatch: Colors.grey,// Main theme Color
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute:  '/',
+     /* initialRoute:  '/',
        routes: {
-        '/': (context) =>  FrameAdvantageHomePage(title: 'Home'),
-         '/PatchNotesPage': (context) => FrameAdvantagePatchNotePage(title: 'Patch Notes'),
-         '/FrameDataPage': (context) => FrameAdvantageFrameDataPage(title: 'Frame Data'),
-         '/TournamentCalendarPage': (context) => FrameAdvantageTournamentCalendarPage(title: 'Tournament Calendar'),
-         '/NotePadPage': (context) => FrameAdvantageFrameDataPage(title: 'Note Pad'),
-       } ,
-
-
-      //home: FrameAdvantageHomePage(title: 'Home'),
+        '/': (context) =>  HomePage(title: 'Home'),
+         '/PatchNotesPage': (context) => PatchNotePage(title: 'Patch Notes'),
+         '/FrameDataPage': (context) => FrameDataPage(title: 'Frame Data'),
+         '/TournamentCalendarPage': (context) => TournamentCalendarPage(title: 'Tournament Calendar'),
+         '/NotePadPage': (context) => FrameDataPage(title: 'Note Pad'),
+       } ,*/
+      home: CurrentPage(),
     );
   }
 }
